@@ -1,0 +1,17 @@
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}

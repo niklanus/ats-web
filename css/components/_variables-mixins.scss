@@ -1,0 +1,31 @@
+$main: #0e76bc;
+$blue: #3b8ae2;
+$darkgray: #414445;
+
+@mixin hover {
+  -webkit-transition: all 250ms;
+  -moz-transition:    all 250ms;
+  -o-transition:      all 250ms;
+  transition:         all 250ms;
+}
+
+@mixin hover-medium {
+  -webkit-transition: all 350ms;
+  -moz-transition:    all 350ms;
+  -o-transition:      all 350ms;
+  transition:         all 350ms;
+}
+
+@mixin hover-slow {
+  -webkit-transition: all 500ms;
+  -moz-transition:    all 500ms;
+  -o-transition:      all 500ms;
+  transition:         all 500ms;
+}
+
+@mixin hover-veryslow {
+  -webkit-transition: all 900ms;
+  -moz-transition:    all 900ms;
+  -o-transition:      all 900ms;
+  transition:         all 900ms;
+}
