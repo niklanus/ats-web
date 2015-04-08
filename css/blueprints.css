@@ -2882,7 +2882,8 @@ header {
         background: #3b8ae2 !important; } }
     @media only screen and (max-width: 520px) {
       .estbl-main .estbl-slider-overlay {
-        text-align: center; }
+        text-align: center;
+        padding-bottom: 0px; }
         .estbl-main .estbl-slider-overlay .col-xs-8 {
           width: 100%;
           float: none; } }
@@ -2948,7 +2949,7 @@ header {
           font-size: 0.7em; }
           .estbl-main .estbl-slider-overlay .estbl-location span {
             padding: 4px 10px;
-            background-color: #217cde;
+            border: 1px solid #94c0ef;
             border-radius: 12px; } }
       .estbl-main .estbl-slider-overlay .estbl-location i {
         padding: 0 7px;
@@ -2980,12 +2981,72 @@ header {
           top: auto;
           right: auto;
           float: none;
-          margin-top: 20px; } }
+          margin-top: 35px;
+          display: block;
+          border: 0px;
+          background: #1f77d5; }
+          .estbl-main .estbl-slider-overlay .estbl-website:hover, .estbl-main .estbl-slider-overlay .estbl-website:focus {
+            background-color: #1a63b1; } }
   .estbl-main .estbl-slider {
     position: relative;
     z-index: 0;
-    max-height: 600px;
+    max-height: 550px;
     overflow: hidden; }
+
+.estbl-info {
+  color: #414445; }
+  .estbl-info h3 {
+    font-size: 1.6em;
+    border-bottom: 1px solid #dbdada;
+    padding-bottom: 8px;
+    margin: 0 0 30px 0; }
+  .estbl-info .container {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  @media only screen and (max-width: 767px) {
+    .estbl-info {
+      text-align: center; }
+      .estbl-info .col-sm-6:first-child {
+        margin-bottom: 50px; } }
+  @media only screen and (max-width: 550px) {
+    .estbl-info .estbl-info-list {
+      font-size: 0.9em; }
+      .estbl-info .estbl-info-list li i {
+        margin-right: 8px; } }
+
+.estbl-info-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .estbl-info-list li {
+    margin-bottom: 18px;
+    font-weight: 300;
+    white-space: nowrap; }
+    .estbl-info-list li a {
+      text-decoration: none;
+      color: #414445; }
+    .estbl-info-list li i {
+      margin-right: 15px;
+      position: relative;
+      top: 1px;
+      color: #8c9193; }
+  .estbl-info-list li:last-child {
+    margin-bottom: 0px; }
+
+.estbl-map {
+  width: 100%;
+  height: 380px;
+  border-top: 1px solid #dbdada;
+  border-bottom: 1px solid #dbdada; }
+  .estbl-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0px; }
+
+.estbl-others h3 {
+  color: #414445;
+  font-size: 1.6em;
+  text-align: center; }
 
 .ats-certified {
   background: #414445;
@@ -3040,8 +3101,8 @@ header {
     width: 425px;
     height: 42px;
     margin: 0 auto;
-    background-size: 425px 42px;
-    background: url(../img/footer-2.png) no-repeat 50% 50%; }
+    background: url(../img/footer-2.png) no-repeat 50% 50%;
+    background-size: 425px 42px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .logo-others .logo {
         background-image: url(../img/footer-2@2x.png); } }
