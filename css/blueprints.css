@@ -2825,6 +2825,168 @@ header {
       border-width: 0 6px 6px 0;
       border-color: transparent #1b66b6 transparent transparent; }
 
+.estbl {
+  position: relative; }
+
+.estbl-main {
+  position: relative; }
+  .estbl-main .estbl-back {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    text-transform: lowercase;
+    background-color: #3b8ae2;
+    line-height: 60px;
+    height: 60px;
+    color: white;
+    border-radius: 0px; }
+    @media only screen and (max-width: 767px) {
+      .estbl-main .estbl-back {
+        position: relative;
+        width: 100%;
+        background-color: #414445; }
+        .estbl-main .estbl-back:hover, .estbl-main .estbl-back:focus {
+          background-color: #5a5e5f !important; } }
+    .estbl-main .estbl-back i {
+      font-size: 1.2em;
+      position: relative;
+      top: 3px;
+      margin-right: 8px; }
+    .estbl-main .estbl-back:hover, .estbl-main .estbl-back:focus {
+      background-color: #1e72cc; }
+  .estbl-main .estbl-slider-overlay {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    padding: 140px 0 40px 0;
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.85)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+    /* IE6-9 */ }
+    @media only screen and (max-width: 767px) {
+      .estbl-main .estbl-slider-overlay {
+        position: relative;
+        bottom: auto;
+        padding: 30px 0px;
+        background: #3b8ae2 !important; } }
+    @media only screen and (max-width: 520px) {
+      .estbl-main .estbl-slider-overlay {
+        text-align: center; }
+        .estbl-main .estbl-slider-overlay .col-xs-8 {
+          width: 100%;
+          float: none; } }
+    @media only screen and (max-width: 991px) {
+      .estbl-main .estbl-slider-overlay .container {
+        width: 100%;
+        padding: 0 20px; } }
+    .estbl-main .estbl-slider-overlay .estbl-title, .estbl-main .estbl-slider-overlay .estbl-location {
+      margin: 0;
+      font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
+      font-style: normal; }
+    .estbl-main .estbl-slider-overlay .estbl-title {
+      letter-spacing: -0.01em;
+      font-size: 2.8em;
+      margin-bottom: 12px;
+      font-weight: 300;
+      line-height: 58px; }
+      @media only screen and (max-width: 850px) {
+        .estbl-main .estbl-slider-overlay .estbl-title {
+          font-size: 2.4em;
+          line-height: 50px; } }
+      @media only screen and (max-width: 767px) {
+        .estbl-main .estbl-slider-overlay .estbl-title {
+          font-size: 2em;
+          line-height: 44px;
+          margin-bottom: 8px; } }
+      @media only screen and (max-width: 640px) {
+        .estbl-main .estbl-slider-overlay .estbl-title {
+          font-size: 1.6em;
+          line-height: 37px;
+          padding-right: 20px; } }
+      @media only screen and (max-width: 520px) {
+        .estbl-main .estbl-slider-overlay .estbl-title {
+          font-size: 1.3em;
+          line-height: 30px;
+          padding: 0px 20px;
+          margin-bottom: 14px; } }
+      .estbl-main .estbl-slider-overlay .estbl-title .stars {
+        font-size: 0.35em;
+        margin-left: 10px;
+        position: relative;
+        top: -2px; }
+        .estbl-main .estbl-slider-overlay .estbl-title .stars i {
+          padding-right: 3px; }
+        @media only screen and (max-width: 640px) {
+          .estbl-main .estbl-slider-overlay .estbl-title .stars {
+            font-size: 14px; } }
+        @media only screen and (max-width: 640px) and (min-width: 519px) {
+          .estbl-main .estbl-slider-overlay .estbl-title .stars {
+            display: block;
+            top: auto;
+            margin-left: 0px;
+            font-size: 14px; } }
+    .estbl-main .estbl-slider-overlay .estbl-location {
+      text-transform: uppercase;
+      font-size: 0.9em;
+      font-weight: 400; }
+      @media only screen and (max-width: 767px) {
+        .estbl-main .estbl-slider-overlay .estbl-location {
+          font-size: 0.8em; } }
+      @media only screen and (max-width: 520px) {
+        .estbl-main .estbl-slider-overlay .estbl-location {
+          font-size: 0.7em; }
+          .estbl-main .estbl-slider-overlay .estbl-location span {
+            padding: 4px 10px;
+            background-color: #217cde;
+            border-radius: 12px; } }
+      .estbl-main .estbl-slider-overlay .estbl-location i {
+        padding: 0 7px;
+        font-family: Arial, sans-serif;
+        position: relative;
+        top: 1px; }
+    .estbl-main .estbl-slider-overlay .estbl-website {
+      color: white;
+      float: right;
+      border: 1px solid white;
+      height: 56px;
+      line-height: 56px;
+      font-size: 1em;
+      position: absolute;
+      bottom: 40px;
+      right: 40px; }
+      .estbl-main .estbl-slider-overlay .estbl-website:hover, .estbl-main .estbl-slider-overlay .estbl-website:focus {
+        background-color: rgba(255, 255, 255, 0.3); }
+      @media only screen and (max-width: 767px) {
+        .estbl-main .estbl-slider-overlay .estbl-website {
+          font-size: 0.9em;
+          padding: 0 18px;
+          right: 30px;
+          bottom: auto;
+          top: 45px; } }
+      @media only screen and (max-width: 520px) {
+        .estbl-main .estbl-slider-overlay .estbl-website {
+          position: relative;
+          top: auto;
+          right: auto;
+          float: none;
+          margin-top: 20px; } }
+  .estbl-main .estbl-slider {
+    position: relative;
+    z-index: 0;
+    max-height: 600px;
+    overflow: hidden; }
+
 .ats-certified {
   background: #414445;
   padding: 60px 0; }

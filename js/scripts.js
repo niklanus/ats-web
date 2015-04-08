@@ -144,6 +144,15 @@ $( document ).ready(function() {
 
 	$('.chosen').chosen();
 
+	$('.estbl-slider').slick({
+		autoplay: true,
+		autoplaySpeed: 3000,
+		speed: 1200,
+		dots: false,
+		arrows: false,
+		pauseOnHover: false
+	});
+
 	$.navigate.init();
 });
 
